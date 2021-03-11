@@ -11,7 +11,7 @@ function Login({setLoggedIn}) {
         fetch("https://test.anniezheng.dev/login", {
             method: "POST",
             headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
+                "Content-Type": "application/x-www-form-urlencoded"
             },
             body: qs.stringify({
                 username: username,

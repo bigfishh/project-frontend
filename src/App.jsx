@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Login from './Login'
 import Signup from './Signup'
+import Form from './Form'
 
 function App() {
 
@@ -19,7 +20,12 @@ function App() {
 
     function renderForms() {
         if (loggedIn) {
-            return <button onClick={handleLogout}>Log out</button>
+            return( 
+                <div>
+                    <button onClick={handleLogout}>Log out</button>
+                    <Form />
+                </div>
+            )
         } else {
             return (
                 <div>
